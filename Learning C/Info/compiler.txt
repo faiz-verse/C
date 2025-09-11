@@ -1,0 +1,54 @@
+C is a compiled language so it needs the compiler to be installed locally on the system
+so that it can process the code to create an executable file that actually runs the code
+
+✅ Step 1: Install GCC (MinGW for Windows)
+
+Go to MinGW-w64 download page
+
+Download the installer (mingw-w64-install.exe).
+
+Run the installer:
+
+Architecture: x86_64
+
+Threads: posix
+
+Exception: seh
+
+Install path: e.g. C:\mingw-w64
+
+✅ Step 2: Add GCC to PATH
+
+Open Start menu → type "environment variables" → Edit the system environment variables.
+
+In the System Properties window → click Environment Variables.
+
+In the "System variables" section → find Path → click Edit.
+
+Add this path (depending on your installation):
+
+C:\mingw-w64\bin
+
+
+(Make sure the path points to the bin folder where gcc.exe exists).
+
+Click OK → close all dialogs.
+
+✅ Step 3: Verify Installation
+
+Open Command Prompt and type:
+
+gcc --version
+
+
+You should see version details like:
+
+gcc (x86_64-win32-seh-rev0) 12.2.0
+
+✅ Step 4: Compile and Run Your C Program
+
+Now in VS Code terminal (or Command Prompt):
+
+cd "h:\My Drive\Learning C\"
+gcc HelloWorld.c -o HelloWorld.exe
+HelloWorld.exe
