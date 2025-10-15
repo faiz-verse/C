@@ -1,0 +1,31 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Build directories
+/build/
+bin/
+debug/
+release/
+
+# Backup and temporary files
+*~
+*.swp
+*.tmp
+*.log
+
+# Code Runner or VS Code temp files
+.vscode/
+*.code-workspace
+
+# System-specific junk
+.DS_Store
+Thumbs.db
+desktop.ini
